@@ -7,13 +7,13 @@ import javafx.scene.layout.GridPane;
 public class Mole extends ImageView {
     private int currentGridX;
     private int currentGridY;
-    private final int POINTS = 1;
+    public static final int POINTS = 1;
 
     public Mole(Image image) {
         // Set image and dimensions
         this.setImage(image);
-        this.setFitWidth(40.0);
-        this.setFitHeight(40.0);
+        this.setFitWidth(100.0);
+        this.setFitHeight(80.0);
     }
     public int getGridX() {
         return currentGridX;
