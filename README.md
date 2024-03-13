@@ -42,7 +42,7 @@ Whack-A-Mole is a simple and classic arcade game where the player has to hit the
 - Timelines are used for mole spawning and disappearance.
 - Images for moles are loaded from resources.
 - Integration with JDBC (Java Database Connectivity) for storing and retrieving player high scores.
-- 
+
 ## Snapshot
 ![Screenshot 2024-03-13 at 5 10 43 AM](https://github.com/ishan494a/Whack-A-Mole/assets/128569642/48380639-20dc-49d5-bb80-37ee12f1e298)
 
