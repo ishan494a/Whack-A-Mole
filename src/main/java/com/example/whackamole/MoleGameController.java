@@ -81,9 +81,9 @@ public class MoleGameController implements Initializable {
         // Randomly choose duration for mole visibility
         double duration;
         if(rand < 0.9){
-            duration = Math.random() * 0.5 + 0.5;
+            duration = Math.random() * 0.5 + 0.6;
         } else {
-            duration = Math.random() * 0.5 + 0.3;
+            duration = Math.random() * 0.5 + 0.4;
         }
         KeyFrame keyFrame = new KeyFrame(Duration.seconds(duration), event -> {
             board.getChildren().remove(mole);
@@ -98,7 +98,7 @@ public class MoleGameController implements Initializable {
     }
     private void whack(MouseEvent event){
         Mole whackedMole = (Mole) event.getSource();
-        score += whackedMole instanceof SuperMole ? ((SuperMole) whackedMole).getPOINTS() : whackedMole.getPOINTS();
+        score += whackedMole.getPOINTS();
         scoreLabel.setText(Integer.toString(score));
         board.getChildren().remove(whackedMole);
     }
